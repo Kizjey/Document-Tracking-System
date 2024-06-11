@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SDL Document Tracking System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="kilimo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+  <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: HeroBiz
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+  /* Initial content color */
+  .about-content {
+    color: black; /* Set your initial text color here */
+  }
+
+  /* Style for the active link */
+  .nav-pills .nav-link.active {
+    color: #a5c90f;
+  }
+  .features .nav-link.active {
+    background-color: #a5c90f;
+    color: #a5c90f;
+  }
+  .features .nav-item.active {
+    background-color: #a5c90f;
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0" style="background-color: #ECFFDC;">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="sdl.png" alt="" width="100%"> 
+        <!-- <h1>DTS<span>.</span></h1> -->
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+          <li class="nav-link scrollto"><a href="index.html"><span>Home</span> <i></i></a>
+          </li>
+
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <!-- <li><a class="nav-link scrollto" href="index.html#services">Services</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li> -->
+          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li> -->
+         <!--  <li class="dropdown megamenu"><a href="#"><span>Mega Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li>
+                <a href="#">Column 1 link 1</a>
+                <a href="#">Column 1 link 2</a>
+                <a href="#">Column 1 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 2 link 1</a>
+                <a href="#">Column 2 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 3 link 1</a>
+                <a href="#">Column 3 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 4 link 1</a>
+                <a href="#">Column 4 link 2</a>
+                <a href="#">Column 4 link 3</a>
+              </li>
+            </ul>
+          </li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+
+      <a class="btn-getstarted scrollto" href="login.html" style="background-color: #a5c90f;">LOGIN</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+      <img src="assets/img/hero-carousel/hero-carousel-3.svg" class="img-fluid animated">
+      <h2>Welcome to the<span style="color: #a5c90f;"> Letter Tracking System</span></h2>
+      <p>Let us help you track your documents.</p>
+      <div class="d-flex">
+        <a href="login.html" class="btn-get-started scrollto" style="background-color: #a5c90f;">LOGIN</a>
+        <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2 style="color: #a5c90f;">About the State Department of Livestock</h2>
+      <p>Welcome to the State Department of Livestock's Letter Tracking System. We are dedicated to efficient management and tracking of letters related to livestock activities.</p>
+    </div>
+
+    <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="col-lg-5">
+        <div class="about-img">
+          <img src="livestock.jpg" class="img-fluid" alt="Livestock Image" height="100%">
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <h3 class="pt-0 pt-lg-5" style="color: #a5c90f;" >Enhancing Livestock Activities Through Effective Communication</h3>
+
+        <!-- Tabs -->
+        <ul class="nav nav-pills mb-3">
+          <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Efficient Tracking</a></li>
+          <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Collaboration</a></li>
+          <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Security</a></li>
+        </ul><!-- End Tabs -->
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+
+          <div class="tab-pane fade show active" id="tab1">
+
+            <p class="fst-italic">Our system ensures that letters related to livestock activities are tracked efficiently, providing transparency and accountability.</p>
+
+            <div class="d-flex align-items-center mt-4">
+              <i class="bi bi-check2"></i>
+              <h4 style="color: #a5c90f;">Streamlined Process</h4>
+            </div>
+            <p>We streamline the process of submitting, reviewing, and responding to letters, saving time and reducing administrative burdens.</p>
+
+            <!-- Add more points as needed -->
+
+          </div><!-- End Tab 1 Content -->
+
+          <div class="tab-pane fade show" id="tab2">
+
+            <p class="fst-italic">Collaboration is at the heart of our system. We foster communication among stakeholders in the livestock sector.</p>
+
+            <div class="d-flex align-items-center mt-4">
+              <i class="bi bi-check2"></i>
+              <h4>Engage Stakeholders</h4>
+            </div>
+            <p>We facilitate communication between livestock owners, veterinary professionals, and regulatory bodies, ensuring effective collaboration.</p>
+
+            <!-- Add more points as needed -->
+
+          </div><!-- End Tab 2 Content -->
+
+          <div class="tab-pane fade show" id="tab3">
+
+            <p class="fst-italic">Security of sensitive information is paramount. Our system employs advanced security measures to protect data.</p>
+
+            <div class="d-flex align-items-center mt-4">
+              <i class="bi bi-check2"></i>
+              <h4>Data Protection</h4>
+            </div>
+            <p>We prioritize data security, implementing encryption and access controls to safeguard confidential information.</p>
+
+            <!-- Add more points as needed -->
+
+          </div><!-- End Tab 3 Content -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End About Section -->
+
+  <!--  Call To Action Section -->
+    <section id="cta" class="cta">
+  <div class="container" data-aos="zoom-out">
+
+    <div class="row g-5">
+
+      <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+        <h3 style="color: #a5c90f;">Streamline Livestock Management with our Letter Tracking System</h3>
+        <p>Efficiently manage letters related to livestock activities and enhance communication across the livestock sector. Our system ensures transparency, collaboration, and data security.</p>
+        <a class="cta-btn align-self-start" href="login.html" style="background-color: #a5c90f;">LOGIN</a>
+      </div>
+
+      <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+        <div class="img">
+          <img src="assets/img/callForAction.jpeg" alt="Call To Action Image" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Call To Action Section -->
+
+    <!-- Features Section-->
+    <section id="features" class="features" >
+  <div class="container" data-aos="fade-up">
+
+    <ul class="nav nav-tabs row gy-4 d-flex">
+
+      <li class="nav-item col-6 col-md-4 col-lg-2" >
+        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1" style="background-color: #ECFFDC;">
+          <i class="bi bi-check-circle color-cyan"></i>
+          <h4>Efficient Tracking</h4>
+        </a>
+      </li><!-- End Tab 1 Nav -->
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2" style="background-color: #ECFFDC;">
+          <i class="bi bi-people color-indigo"></i>
+          <h4>Collaboration</h4>
+        </a>
+      </li><!-- End Tab 2 Nav -->
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3" style="background-color: #ECFFDC;">
+          <i class="bi bi-lock color-teal"></i>
+          <h4>Data Security</h4>
+        </a>
+      </li><!-- End Tab 3 Nav -->
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4" style="background-color: #ECFFDC;">
+          <i class="bi bi-clipboard-check color-purple"></i>
+          <h4>Automated Workflow</h4>
+        </a>
+      </li><!-- End Tab 4 Nav -->
+
+      <li class="nav-item col-6 col-md-4 col-lg-2">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5" style="background-color: #ECFFDC;">
+          <i class="bi bi-pie-chart color-orange"></i>
+          <h4>Analytics & Reporting</h4>
+        </a>
+      </li><!-- End Tab 5 Nav -->
+
+    </ul>
+
+    <div class="tab-content">
+
+      <div class="tab-pane active show" id="tab-1">
+        <div class="row gy-5">
+          <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h3>Efficient Tracking</h3>
+            <p class="fst-italic">
+              Seamlessly manage and track letters related to livestock activities for streamlined operations.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Submit and process letters with ease.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Monitor progress and updates in real-time.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Ensure timely communication with stakeholders.</li>
+            </ul>
+            <p>
+              Enhance your letter tracking process for better livestock management.
+            </p>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/track.jpg" alt="Efficient Tracking Image" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content 1 -->
+
+      <div class="tab-pane" id="tab-2">
+        <div class="row gy-5">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Collaboration</h3>
+            <p>
+              Foster collaboration among stakeholders by providing a platform for effective communication and information sharing.
+            </p>
+            <p class="fst-italic">
+              Enable collaboration among different departments and promote transparent decision-making.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Facilitate communication among different departments.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Promote transparency in the decision-making process.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Empower informed decision-making for livestock management.</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/img/collaboration.jfif" alt="Collaboration Image" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content 2 -->
+
+      <div class="tab-pane" id="tab-3">
+        <div class="row gy-5">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Data Security</h3>
+            <p>
+              Ensure the security and confidentiality of sensitive data related to livestock activities and correspondence.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Implement robust data encryption and access controls.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Regularly audit and monitor system security.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Comply with industry standards for data protection.</li>
+            </ul>
+            <p class="fst-italic">
+              Protect sensitive information to maintain trust and compliance.
+            </p>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/img/data.jpg" alt="Data Security Image" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content 3 -->
+
+      <div class="tab-pane" id="tab-4">
+        <div class="row gy-5">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Automated Workflow</h3>
+            <p>
+              Streamline your letter tracking process with automated workflows that ensure consistent and timely handling of tasks.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Define and enforce standardized processes.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Minimize manual errors and delays.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Increase efficiency and reduce administrative burden.</li>
+            </ul>
+            <p class="fst-italic">
+              Let automation drive efficiency and accuracy in your letter management.
+            </p>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/img/workflow.jpg" alt="Automated Workflow Image" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content 4 -->
+
+      <div class="tab-pane" id="tab-5">
+        <div class="row gy-5">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Analytics & Reporting</h3>
+            <p>
+              Gain insights into letter tracking performance and trends through comprehensive analytics and reporting tools.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Monitor key metrics and performance indicators.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Identify bottlenecks and areas for improvement.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Generate customized reports for informed decision-making.</li>
+            </ul>
+            <p class="fst-italic">
+              Leverage data-driven insights for strategic planning and continuous improvement.
+            </p>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/img/reporting.avif" alt="Analytics & Reporting Image" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content 5 -->
+
+      <div class="tab-pane" id="tab-6">
+        <div class="row gy-5">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <h3>Analytics & Reporting</h3>
+            <p>
+              Gain insights into letter tracking performance and trends through comprehensive analytics and reporting tools.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Monitor key metrics and performance indicators.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Identify bottlenecks and areas for improvement.</li>
+              <li><i class="bi bi-check-circle-fill"></i> Generate customized reports for informed decision-making.</li>
+            </ul>
+            <p class="fst-italic">
+              Leverage data-driven insights for strategic planning and continuous improvement.
+            </p>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img src="assets/img/analytics-reporting.svg" alt="Analytics & Reporting Image" class="img-fluid">
+          </div>
+        </div>
+      </div><!-- End Tab Content 5 -->
+
+    </div>
+
+  </div>
+</section><!-- End Features Section -->
+
+    <!-- End Portfolio Section -->
+    <!-- Our Team Section -->
+
+    <section id="team" class="team">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2 style="color: #a5c90f;"><b>Our Team</b></h2>
+      <p>We have a dedicated team of professionals who have worked tirelessly to create and manage the letter tracking system, ensuring its reliability and functionality.</p>
+    </div>
+
+    <div class="row gy-5">
+
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/juma.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <h4 style="color: #a5c90f;">Twenye Juma</h4>
+            <span>Website developer</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/juma.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <h4 style="color: #a5c90f;">Donald Ngolo</h4>
+            <span>Assistant Director</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="assets/img/juma.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <h4 style="color: #a5c90f;">Twenye Juma</h4>
+            <span>Founder</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Add more team members using similar structure -->
+
+    </div>
+
+  </div>
+</section><!-- End Team Section -->
+
+    <section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-header">
+      <h2 style="color: #a5c90f;"><b>Contact Us</b></h2>
+      <p>If you have any inquiries or need assistance with our letter tracking system, please feel free to get in touch with us.</p>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="row gy-5 gx-lg-5">
+
+      <div class="col-lg-4">
+
+        <div class="info">
+          <h3 style="color: #a5c90f; text-align: center;">Get in touch with the Developers</h3>
+          <p>If you have any questions or feedback, don't hesitate to contact us. We're here to help!</p>
+
+          <div class="info-item d-flex">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h4 style="color: #a5c90f;">Location:</h4>
+              <p>P. O. Box 30028-00100 Kenya</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h4 style="color: #a5c90f;">Email:</h4>
+              <p>twenyejuma56@gmail.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <i class="bi bi-phone flex-shrink-0"></i>
+            <div>
+              <h4 style="color: #a5c90f;">Call:</h4>
+              <p>0705332683</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-8">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center" ><button type="submit" style="background-color: #a5c90f;">Send Message</button></div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <!-- <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>HeroBiz</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-legal text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Twenye Juma</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+            Designed by <a href="">Twenye Juma</a>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center" style="background-color: #a5c90f;"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

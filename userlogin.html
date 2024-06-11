@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #ECFFDC;
+      font-family: Arial, sans-serif;
+    }
+    
+    .login-container {
+      display: flex;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .login-container:hover {
+      transform: scale(1.35);
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .login-form {
+      padding: 20px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .login-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+      transition: color 0.3s;
+    }
+    
+    .login-form:hover h2 {
+      color: #a5c90f;
+    }
+    
+    .login-form input {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+    
+    .login-form input:focus {
+      border-color: #a5c90f;
+    }
+    
+    .login-form button {
+      background-color: #a5c90f;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      font-size: 16px;
+    }
+    
+    .login-form button:hover {
+      background-color: #8ba20e;
+    }
+    
+    .login-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+      transition: color 0.3s;
+    }
+    
+    .login-options label, .login-options a {
+      transition: color 0.3s;
+    }
+    
+    .login-options label:hover, .login-options a:hover {
+      color: #a5c90f;
+    }
+    
+    .vision-section {
+      background-color: #a5c90f;
+      color: white;
+      border-radius: 0 10px 10px 0;
+      padding: 20px;
+      width: 50%;
+      text-align: center;
+    }
+    
+    .vision-section h3 {
+      margin-bottom: 15px;
+      transition: color 0.3s;
+    }
+    
+    .vision-section p {
+      transition: color 0.3s;
+    }
+    
+    .vision-section:hover h3, .vision-section:hover p {
+      color: #f0f0f0;
+    }
+    @media (max-width: 768px) {
+      .login-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .login-form, .vision-section {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .vision-section {
+        margin-top: 0;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container" style="width: 50%;">
+    <div class="login-form">
+      <img src="sdl.png" alt="" width="100%"> 
+      <h2>Welcome Back!</h2>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <div class="login-options">
+        <label>
+          <input type="checkbox"> Remember Me
+        </label>
+        <a href="#">Forgot Password?</a>
+      </div>
+    </div>
+    <div class="vision-section">
+      <h3>Our Vision</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent ut sem vel nunc efficitur ultrices.</p>
+    </div>
+  </div>
+</body>
+</html>
